@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title> <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" /> <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body> 
+  <!-- Navbar -->
+  <nav class="navbar spotify-navbar sticky-top px-4 py-3">
+    <div class="container-fluid d-flex justify-content-between align-items-center"> 
+      
+      <!-- Back/Forward buttons -->
+      <div class="d-flex align-items-center gap-2" id="navs">
+         <button class="btn btn-dark rounded-circle"><i class="fa-brands fa-spotify"></i></i></button> <button class="btn btn-dark rounded-circle"><i
+            class="fa-solid fa-house"></i></button> </div> 
+            
+            <!-- Search Bar -->
+      <form class="d-none d-md-block w-50" id="navs">
+        <div class="input-group rounded-pill search-bar"> <input type="text"
+            class="form-control bg-dark text-white border-0 px-4 rounded-start-pill"
+            placeholder="What do you want to play?" /> <span
+            class="input-group-text bg-dark border-0 rounded-end-pill"><i class="fas fa-search text-white"></i></span>
+        </div>
+      </form> 
+
+      
+      <!-- Right Buttons -->
+     <div class="d-flex align-items-center gap-3" id="navs">
+  <a href="#" class="nav-hover text-decoration-none">Premium</a>
+  <a href="#" class="nav-hover text-decoration-none">Support</a>
+  <a href="#" class="nav-hover text-decoration-none">Download</a>
+  <span class="vr text-white"></span>
+  <a href="#" class="nav-hover text-decoration-none">
+    <i class="fa-regular fa-circle-down me-1"></i>Install App
+  </a>
+  <a href="#" class="text-white text-decoration-none">Sign up</a>
+  <button class="btn btn-light rounded-pill px-4">Log in</button>
+</div>
+
+  
+  
+  
+
+    <!-- Sidebar -->
+    <div class="sidebar sticky-sidebar p-3">
+      <h5>Your Library</h5>
+      <div class="mt-3 bg-dark p-3 rounded">
+        <p class="fw-bold mb-1">Create your first playlist</p>
+        <p class="mb-2">It’s easy, we’ll help you</p> <button class="btn btn-light btn-sm">Create playlist</button>
+      </div>
+      <div class="mt-3 bg-dark p-3 rounded">
+        <p class="fw-bold mb-1">Find podcasts to follow</p>
+        <p class="mb-2">We’ll keep you updated</p> <button class="btn btn-light btn-sm">Browse podcasts</button>
+      </div>
+    </div> 
+
+
+    <!-- Main content -->
+    <main class="main-content p-4" width="70%">
+      <h4 class="text-white mb-4">Trending Songs</h4>
+      
+      <div class="d-flex overflow-auto gap-3 mb-5"> 
+
+
+        <!-- Example song cards -->
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://www.cinejosh.com/newsimg/newsmainimg/baaghi-4-song-guzaara_b_1808250446.jpg"
+            class="card-img-top" height="170px" alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Guzaraa</h6>
+            <p class="card-text small">Josh Brar</p>
+          </div>
+        </div>
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://www.pagaiworld.com/covers/azul-guru-randhawa_4.jpg" height="170px" class="card-img-top" alt="song">
+          <div class="card-body">
+            <h6 class="card-title">AZUL</h6>
+            <p class="card-text small">Guru Randhava</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://images.genius.com/f0285eb8ef72d21a05ff4c0b63ea2c44.1000x1000x1.png" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Thodi Si Daaru</h6>
+            <p class="card-text small">AP Dhillon</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://lyricloops.com/wp-content/uploads/2025/08/Naam-Chale-Lyrics-Vikram-Sarkar-2025-600x338.webp" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Naam Chale</h6>
+            <p class="card-text small">Vikram Sarkar</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/4WEqzVEgWP/size_m_1714536208.jpg" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Soniya Soniya</h6>
+            <p class="card-text small">A R Rahman</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://cdn.wrytin.com/images/thumbnail/r/400/1000182582-melmigmj.jpeg" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Pardesiya</h6>
+            <p class="card-text small">Sachin-Jigar</p>
+          </div>
+        </div>
+        
+        <!-- Add more song cards here -->
+      </div>
+      <h4 class="text-white mb-3">Popular Artists</h4>
+      <div class="d-flex overflow-auto gap-4">
+        
+
+
+        <div class=""> <img src="https://static.toiimg.com/photo/83402681.cms" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Pritam</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="https://i.scdn.co/image/4df9740f3f6bfcc28e9c8c57ecf4c7eda4a2e42b" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>A R Rahman</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="https://wallpaperaccess.com/full/8450402.jpg" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Arjith Singh</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="https://www.radioandmusic.com/sites/www.radioandmusic.com/files/images/entertainment/2017/02/03/Sachin---Jigar1.jpg" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Sachin-Jigar</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="http://www.radioandmusic.com/sites/www.radioandmusic.com/files/images/entertainment/2020/02/12/IMG-20200212-WA0024.jpg" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Vishal-Shekhar</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="https://cdn.siasat.com/wp-content/uploads/2024/01/Atif-Aslam.jpg" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Atif Aslam</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+        <div class=""> <img src="https://www.m9.news/wp-content/uploads/2024/01/Anirudh-Ravichander.jpg" height="200px" width="200px" class="rounded-circle mb-2"
+            alt="artist">
+          <p class="text-white small"> <h5>Anirudh Ravichander</h5></p>
+          <p>
+          <h6>Artist</h6>
+          </p>
+        </div>
+
+      </div>
+
+
+
+    <!-- Main content -->
+   
+      <h4 class="text-white mb-4">Popular Album Songs </h4>
+      
+      <div class="d-flex overflow-auto gap-3 mb-5"> 
+
+
+        <!--  song cards -->
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://tse2.mm.bing.net/th/id/OIP.LMdmVm2szLheI80K6gT6awHaJ0?pid=Api&P=0&h=180"
+            class="card-img-top" height="170px" alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Aashiqui 2</h6>
+            <p class="card-text small">Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+          </div>
+        </div>
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://www.pagaiworld.com/covers/azul-guru-randhawa_4.jpg" height="170px" class="card-img-top" alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Yeh Jawaani Hai Dheewani</h6>
+            <p class="card-text small">Pritam</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://images.genius.com/f0285eb8ef72d21a05ff4c0b63ea2c44.1000x1000x1.png" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Sanam Teri Kasam</h6>
+            <p class="card-text small">Himesh Reshammiya</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://lyricloops.com/wp-content/uploads/2025/08/Naam-Chale-Lyrics-Vikram-Sarkar-2025-600x338.webp" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Naam Chale</h6>
+            <p class="card-text small">Vikram Sarkar</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/4WEqzVEgWP/size_m_1714536208.jpg" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Soniya Soniya</h6>
+            <p class="card-text small">A R Rahman</p>
+          </div>
+        </div>
+
+        <div id="trending" class="card bg-dark text-white" style="width: 180px;"> <img
+            src="https://cdn.wrytin.com/images/thumbnail/r/400/1000182582-melmigmj.jpeg" height="170px" class="card-img-top"
+            alt="song">
+          <div class="card-body">
+            <h6 class="card-title">Pardesiya</h6>
+            <p class="card-text small">Sachin-Jigar</p>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+      <h4 class="text-white mt-5 mb-4">Featured Charts</h4>
+      <div class="row g-4">
+        
+        <!-- Featured Card -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="chart-card position-relative bg-purple text-white p-3 rounded"> <i
+              class="fab fa-spotify fs-5 mb-2"></i>
+            <h6 class="fw-bold">Top Songs Global</h6>
+            <p class="small text-white-50">Weekly Music Charts</p>
+            <div class="play-btn"> <button class="btn btn-success rounded-circle shadow"> <i class="fas fa-play"></i>
+              </button> </div>
+          </div>
+        </div> 
+        
+        <!-- Repeat for more cards with different colors -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="chart-card position-relative bg-danger text-white p-3 rounded"> <i
+              class="fab fa-spotify fs-5 mb-2"></i>
+            <h6 class="fw-bold">Top Songs India</h6>
+            <p class="small text-white-50">Weekly Music Charts</p>
+            <div class="play-btn"> <button class="btn btn-success rounded-circle shadow"> <i class="fas fa-play"></i>
+              </button> </div>
+          </div>
+        </div> <!-- Add more cards as needed... -->
+      </div>
+    </main>
+  </div> 
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>.

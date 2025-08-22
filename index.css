@@ -1,0 +1,125 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.spotify-navbar { 
+  background-color: #121212;
+   color: white;
+    z-index: 1030; 
+    
+  }
+  #navs{
+position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+
+.search-bar input::placeholder {
+  color: #ccc;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #121212;
+  height: 100%;
+  color: white;
+  flex-shrink: 0;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 70px; /* height of navbar */
+  align-self: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #121212;
+  margin-left: 20px;
+  overflow-y: auto;
+  width: 70%;
+}
+
+.card:hover {
+  background-color: #121212;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Color backgrounds */
+.bg-purple {
+  background-color: #9b59b6;
+}
+.bg-danger {
+  background-color: #e74c3c;
+}
+.bg-success {
+  background-color: #27ae60;
+}
+.bg-info {
+  background-color: #16a085;
+}
+.bg-warning {
+  background-color: #f1c40f;
+}
+
+/* Hover effect for featured cards */
+.chart-card {
+  height: 160px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.chart-card:hover {
+  background-color: #333;
+}
+
+.chart-card .play-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chart-card:hover .play-btn {
+  opacity: 1;
+}
+
+
+
+
+
+/* Spotify-style hover: smooth color transition */
+.nav-hover {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.01s ease-in-out;
+}
+
+.nav-hover:hover {
+  color: #ffffff;
+}
+
+
+
